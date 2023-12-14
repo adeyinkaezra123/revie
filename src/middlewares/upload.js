@@ -22,9 +22,6 @@ const storage = new CloudinaryStorage({
 });
 const parser = multer({
   storage,
-  // limits: {
-  //   filesize: 30 * 1024 * 1024
-  // }
 });
 
 export default parser;

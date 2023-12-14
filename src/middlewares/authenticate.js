@@ -28,15 +28,15 @@ class Authentication {
           return errorResponse(res, 401, "Invalid authorization format");
         }
       } else {
-        return errorResponse(res, 401, "Authorization not found");
+        return errorResponse(res, 401, "Authorization token not found");
       }
     } catch (error) {
       if (error.name === "TokenExpiredError") {
-        return errorResponse(res, 401, "Session expired, you have to login.");
+        return errorResponse(res, 401, "Session expired, please login.");
       }
 
       if (error.name === "CastError") {
-        return errorResponse(res, 401, "Token invalid.");
+        return errorResponse(res, 401, "Invalid Token.");
       }
 
       if (error.name === "JsonWebTokenError") {

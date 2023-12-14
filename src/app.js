@@ -30,7 +30,7 @@ app.use("/api/v1", router);
 app.use((req, res, next) => res.status(404).send({
     status: "error",
     error: "Not found",
-    message: "This is not the route you're looking for. You messed up",
+    message: "Route not found. Looks like you've stumbled upon a black hole of internet absurdity",
 }));
 
 app.use((err, req, res, next) => {

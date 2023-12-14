@@ -10,7 +10,7 @@ const reviewSchema = new Schema(
     lanlordReview: { type: String, required: true, },
     enviromentReview: { type: String , required: true,},
     apartmentLocation: { type: String, required: true,},
-    isHelpful: { type: Number, default: 0 },
+    upvotes: { type: Number, default: 0 },
   },
   { timestamps: true }
 );

@@ -3,7 +3,7 @@ import { successResponse, errorResponse } from "../utils/responses";
 
 /**
  * @class ReviewController
- * @description create Review, get all Reviews, get a Review, delete a Review, update a Review
+ * @description Generate a Review, retrieve all Reviews, retrieve a specific Review, remove a Review, modify a Review
  * @exports ReviewController
  */
 export default class ReviewController {
@@ -121,7 +121,7 @@ export default class ReviewController {
       if (!review) return errorResponse(res, 404, "Review not found.");
       const helpfulReview = await models.Review.findByIdAndUpdate(
         { _id: reviewId },
-        { $inc: { isHelpful: 1 } }
+        { $inc: { upvotes: 1 } }
       );
       return successResponse(res, 200, "Successfully added count to Review.", helpfulReview);
     } catch (error) {
