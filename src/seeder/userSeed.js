@@ -8,7 +8,7 @@ const User = {
   documents: [
     {
       _id: "6186e80aa8a6d3abae02d434",
-      username: "TheObiOfLagos",
+      username: "elonpluto",
       email: "elon@musk.com",
       password: "$2b$10$SsppLOJjHYqlemaHoN6G1.qG3xzWCKvWwOyS.kotUaIWLDnY72LYy",
       createdAt: "2021-11-06T20:39:38.502Z",
@@ -21,5 +21,5 @@ const User = {
 
   ],
 };
-
+route
 module.exports = User;

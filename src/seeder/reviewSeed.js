@@ -1,20 +1,70 @@
 const Review = {
-    model: "review",
-    documents: [
-      {
-        _id: "62823d2735be3a9454def9a3",
-        user: "62822fb6c668181224599d3a",
-        name: "4 bedroom semi-detached duplex",
-        amenitiesQuality: "Erratic electricity",
-        lanlordReview: "Easy to work with, and very respectful.",
-        enviromentReview: "Nice scenery",
-        apartmentLocation: "65 Eric Manuel Surulere, Surulere Lagos, Lagos State, Nigeria",
-        upvotes: 10,
-        createdAt: "2023-12-16T12:01:43.953Z",
-        updatedAt: "2023-12-16T12:01:43.953Z",
-      }
-    ],
-  };
-  
-  module.exports = Review;
-  
+  model: "review",
+  documents: [
+    {
+      _id: "62823d2735be3a9454def9a3",
+      user: "62822fb6c668181224599d3a",
+      name: "4 bedroom semi-detached duplex",
+      amenitiesQuality: "Erratic electricity",
+      lanlordReview: "Easy to work with, and very respectful.",
+      enviromentReview: "Nice scenery",
+      apartmentLocation:
+        "65 Eric Manuel Surulere, Surulere Lagos, Lagos State, Nigeria",
+      upvotes: 10,
+      createdAt: "2023-12-16T12:01:43.953Z",
+      updatedAt: "2023-12-16T12:01:43.953Z",
+    },
+    {
+      _id: "62931f682d7fcf32d7a7fc88",
+      user: "62822fb6c668181224599d3a",
+      name: "3 bedroom apartment with a view",
+      amenitiesQuality: "Stable internet connection",
+      lanlordReview: "Prompt responses and professional attitude.",
+      enviromentReview: "Scenic surroundings and peaceful ambiance.",
+      apartmentLocation: "28 Johnson Street, Ikeja, Lagos State, Nigeria",
+      upvotes: 15,
+      createdAt: "2023-11-22T09:45:32.123Z",
+      updatedAt: "2023-11-22T09:45:32.123Z",
+    },
+    {
+      _id: "62a0b4f6b925e15ac84c0549",
+      user: "62822fb6c668181224599d3a",
+      name: "Cozy loft in the heart of the city",
+      amenitiesQuality: "Fireplace and city skyline view",
+      lanlordReview: "Helpful and accommodating host.",
+      enviromentReview: "Vibrant neighborhood with lots of nearby attractions.",
+      apartmentLocation: "42 High Street, Lekki Phase 1, Lagos State, Nigeria",
+      upvotes: 18,
+      createdAt: "2023-08-02T14:30:28.789Z",
+      updatedAt: "2023-08-02T14:30:28.789Z",
+    },
+    {
+      _id: "627f8a9b556aad5692882d3f",
+      user: "62822fb6c668181224599d3a",
+      name: "Modern studio apartment",
+      amenitiesQuality: "Central air conditioning",
+      lanlordReview: "Responsive and accommodating landlord.",
+      enviromentReview: "Urban location with easy access to amenities.",
+      apartmentLocation:
+        "14 Freedom Street, Victoria Island, Lagos State, Nigeria",
+      upvotes: 20,
+      createdAt: "2023-10-05T16:20:12.987Z",
+      updatedAt: "2023-10-05T16:20:12.987Z",
+    },
+    {
+      _id: "629ef18f377f2e6a552cf93e",
+      user: "62822fb6c668181224599d3a",
+      name: "Luxurious penthouse suite",
+      amenitiesQuality: "Private rooftop pool",
+      lanlordReview: "Attentive and friendly landlord.",
+      enviromentReview: "Breathtaking views of the city skyline.",
+      apartmentLocation:
+        "7 Marina Avenue, Eko Atlantic City, Lagos State, Nigeria",
+      upvotes: 25,
+      createdAt: "2023-09-12T11:10:57.654Z",
+      updatedAt: "2023-09-12T11:10:57.654Z",
+    },
+  ],
+};
+
+module.exports = Review;
